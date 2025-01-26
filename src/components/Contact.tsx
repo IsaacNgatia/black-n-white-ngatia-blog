@@ -1,3 +1,4 @@
+import { Globe } from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
@@ -5,7 +6,7 @@ const Contact = () => {
   const [activeIndex, setActiveIndex] = useState(2);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState("+254");
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
 
@@ -14,7 +15,10 @@ const Contact = () => {
     setIsOpen(true);
   };
   return (
-    <div id="contact" className="bg-gray-50 mx-2 md:mx-auto md:max-w-2xl lg:max-w-6xl w-full md:p-5 lg:p-10 space-y-10">
+    <div
+      id="contact"
+      className="bg-gray-50 mx-2 md:mx-auto md:max-w-2xl lg:max-w-6xl w-full md:p-5 lg:p-10 space-y-10"
+    >
       <h5 className="text-2xl font-semibold text-center">Contact</h5>
       <div>
         <h2 className="font-bold text-4xl text-center">Visit us in Person</h2>
@@ -25,7 +29,18 @@ const Contact = () => {
       </div>
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-1/2">
-          <iframe
+          <div className="flex justify-center">
+            <Globe className="size-16 text-gray-700" />
+          </div>
+          <h3 className="text-2xl font-bold text-gray-800">
+            Virtual Office Location
+          </h3>
+          <p className="text-gray-600 max-w-md">
+            We operate virtually to serve you better. While we don't have a
+            physical office, we're available through digital channels to provide
+            the same high-quality service.
+          </p>
+          {/* <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9286569166397!2d36.8486340758809!3d-1.2099906355493772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3de7a6093c2d%3A0x6b5386718ea0acfa!2sWindsor%20Golf%20Hotel%20%26%20Country%20Club!5e0!3m2!1ssw!2ske!4v1715255692768!5m2!1ssw!2ske"
             width="100%"
             height="575"
@@ -34,7 +49,7 @@ const Contact = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="rounded-xl shadow-2xl"
-          ></iframe>
+          ></iframe> */}
         </div>
         <div className="space-y-2 w-full lg:w-[50%]">
           <div
@@ -102,11 +117,13 @@ const Contact = () => {
                     />
                   </svg>
                   <span>
-                    <p className="hover:text-blue-500 cursor-pointer">
-                      Windsor Golf Hotel & Country Club <br /> Kigwa Road,
-                      Kiambu County
-                      <br /> Kenya{" "}
-                    </p>
+                    <a
+                      href="https://maps.app.goo.gl/w1xk1dQntBxZzQ1Y8"
+                      target="_blank"
+                      className="hover:text-blue-500 cursor-pointer"
+                    >
+                      Virtual Office Location
+                    </a>
                   </span>
                 </div>
               ) : null}
@@ -114,7 +131,7 @@ const Contact = () => {
           </div>
           <div
             onClick={() => handleOnClick(2)}
-            className="bg-[#f1f1f1] py-5 px-10 rounded-lg  space-y-5  "
+            className="bg-[#f1f1f1] py-5 px-10 rounded-lg space-y-5  "
           >
             <span className="flex justify-between items-center cursor-pointer">
               <h2 className="text-2xl font-bold">Contact Us</h2>
@@ -153,7 +170,9 @@ const Contact = () => {
 
             <div
               className={`overflow-hidden transition-all duration-1000 pt-2 ${
-                activeIndex === 2 && isOpen ? "max-h-[285px]" : "max-h-0"
+                activeIndex === 2 && isOpen
+                  ? "max-h-[400px] lg:max-h-[285px]"
+                  : "max-h-0"
               }`}
             >
               {activeIndex === 2 && isOpen && (

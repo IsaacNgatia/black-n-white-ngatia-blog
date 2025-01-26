@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { Menu, X, Mail, Phone, Search } from 'lucide-react';
+import { Menu, X, Phone, Search } from 'lucide-react';
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,7 +7,7 @@ const Nav = () => {
   const navLinks = [
     { href: "/#home", label: "Home" },
     { href: "/#about", label: "About Us" },
-    { href: "/#services", label: "Services" },
+    { href: "/#practice-areas", label: "Practice Areas" },
     { href: "/#contact", label: "Contact Us" },
   ];
 
@@ -17,21 +17,18 @@ const Nav = () => {
     <nav className="bg-gray-50 shadow-md w-full">
       {/* Top bar with contact info */}
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col sm:flex-row sm:justify-between py-2">
+        <div className="flex flex-col sm:flex-row sm:justify-between py-2 mx-2 md:mx-4 lg:mx-0">
           {/* Contact Information */}
           <div className="flex flex-col sm:flex-row sm:space-x-6 items-center">
             <a href="/" className="mb-2 sm:mb-0">
-              <img
-                src="/images/logo-transparent.png"
-                alt="logo"
-                className="h-10"
-              />
+             <span className=" font-bold text-gray-900 text-xl relative select-none">Ngatia Wambugu & Company<span className="font-medium absolute -top-3 text-base">&reg;</span></span>
+
             </a>
             <div className="flex space-x-4">
               <span className="flex items-center space-x-1 text-gray-600">
-                <Mail className="w-4 h-4" />
-                <a href="mailto:advocate@ngatia.co.ke" className="text-sm hover:text-gray-900">
-                  advocate@ngatia.co.ke
+                <Phone className="w-4 h-4" />
+                <a href="tel:+254726395910" className="text-sm hover:text-gray-900">
+                  +254 726 395 910
                 </a>
               </span>
               <span className="flex items-center space-x-1 text-gray-600">

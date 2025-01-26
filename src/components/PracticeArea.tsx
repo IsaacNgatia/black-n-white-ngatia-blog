@@ -35,7 +35,7 @@ const PracticeAreaModal = ({ practiceArea }: PracticeAreaModalProps) => {
             </button>
       {isOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center" onClick={handleCloseModal}>
-          <div className="bg-white rounded-lg p-8 w-1/2" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-white rounded-lg p-8 md:w-[75%] lg:w-1/2" onClick={(e) => e.stopPropagation()}>
             <h2 className="text-lg text-black font-bold">{selectedTitle}</h2>
             <p className="text-base text-black my-2">{selectedDescription}</p>
             <p className="text-base text-black">{selectedRichDesc}</p>

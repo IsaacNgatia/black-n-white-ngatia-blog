@@ -45,7 +45,7 @@ const practiceAreasData = [
 
 const PracticeAreas = () => {
   return (
-    <div id="practice-areas" className="mx-4 md:max-w-2xl lg:max-w-6xl md:mx-auto bg-black rounded-lg text-white grid grid-cols-1 lg:grid-cols-3 p-8 md:p-10 justify-around space-x-10 gap-8">
+    <div id="practice-areas" className="mx-2 md:max-w-2xl lg:max-w-6xl md:mx-auto bg-black rounded-lg text-white grid grid-cols-1 lg:grid-cols-3 p-6 md:p-10 justify-around gap-8">
       <div className="space-y-7 my-auto lg:max-w-1/4">
         <h2 className="uppercase font-bold text-3xl md:text-4xl">
           Our Practice Areas
@@ -62,7 +62,7 @@ const PracticeAreas = () => {
           Free Consultation
         </button>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:col-span-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:col-span-2 gap-2 lg:gap-4">
         {practiceAreasData.map((area, index) => (
           <div key={index} className="space-y-7">
             <div className="flex items-start justify-center gap-1 cursor-pointer hover:bg-gray-50 hover:text-black lg:p-2 rounded-md">

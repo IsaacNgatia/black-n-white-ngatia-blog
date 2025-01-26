@@ -1,5 +1,4 @@
 import "./App.css";
-import About from "./components/About";
 import Alert from "./components/Alert";
 import Contact from "./components/Contact";
 import Faq from "./components/Faq";
@@ -7,6 +6,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import PracticeAreas from "./components/PracticeAreas";
+import Teams from "./components/Teams";
 import "./fonts/Century Gothic.otf";
 
 function App() {
@@ -15,7 +15,8 @@ function App() {
       <Alert/>
       <Nav />
       <Hero />
-      <About />
+      {/* <About /> */}
+      <Teams/>
       <Faq />
       <PracticeAreas />
       <Contact />
