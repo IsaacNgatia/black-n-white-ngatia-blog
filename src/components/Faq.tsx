@@ -179,7 +179,7 @@ const faqs: FAQ[] = [
     id: 4,
     question: "How long have you been in business?",
     answer:
-      "We have been in business for over 20 years, serving the legal needs of our community.",
+      "We have been in business for over 6 years, serving the legal needs of our community.",
   },
   {
     id: 5,

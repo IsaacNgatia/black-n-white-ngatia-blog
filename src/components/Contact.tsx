@@ -1,4 +1,3 @@
-import { Globe } from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
@@ -21,25 +20,15 @@ const Contact = () => {
     >
       <h5 className="text-2xl font-semibold text-center">Contact</h5>
       <div>
-        <h2 className="font-bold text-4xl text-center">Visit us in Person</h2>
+        <h2 className="font-bold text-4xl text-center">Visit Us In Person</h2>
         <p className="text-base md:text-lg lg:text-xl text-center">
-          Qui labore et voluptate commodo velit. Qui labore et voluptate commodo
-          velit.
+          For personalized legal guidance and in-depth consultations, we invite
+          you to visit our offices. Our team is ready to assist you with your
+          legal needs.
         </p>
       </div>
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-1/2">
-          <div className="flex justify-center">
-            <Globe className="size-16 text-gray-700" />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-800">
-            Virtual Office Location
-          </h3>
-          <p className="text-gray-600 max-w-md">
-            We operate virtually to serve you better. While we don't have a
-            physical office, we're available through digital channels to provide
-            the same high-quality service.
-          </p>
           {/* <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9286569166397!2d36.8486340758809!3d-1.2099906355493772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3de7a6093c2d%3A0x6b5386718ea0acfa!2sWindsor%20Golf%20Hotel%20%26%20Country%20Club!5e0!3m2!1ssw!2ske!4v1715255692768!5m2!1ssw!2ske"
             width="100%"
@@ -50,6 +39,16 @@ const Contact = () => {
             referrerPolicy="no-referrer-when-downgrade"
             className="rounded-xl shadow-2xl"
           ></iframe> */}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9263550189967!2d36.74464877590317!3d-1.2115550355509472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f23e201e9164d%3A0xeb5aee215a2d18ec!2sFANISI%20HEIGHTS%20KARURA!5e0!3m2!1sen!2ske!4v1741181415879!5m2!1sen!2ske"
+            width="100%"
+            height="575"
+            style={{ border: 0 }}
+            allowFullScreen={false}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded-xl shadow-2xl"
+          ></iframe>
         </div>
         <div className="space-y-2 w-full lg:w-[50%]">
           <div
@@ -118,12 +117,13 @@ const Contact = () => {
                   </svg>
                   <span>
                     <a
-                      href="https://maps.app.goo.gl/w1xk1dQntBxZzQ1Y8"
+                      href="https://maps.app.goo.gl/iZ75eBHH1ikX7GKH9"
                       target="_blank"
-                      className="hover:text-blue-500 cursor-pointer"
+                      className="text-blue-500 hover:text-blue-600 cursor-pointer"
                     >
-                      Virtual Office Location
+                      FANISI HEIGHTS KARURA
                     </a>
+                    <p className="text-sm text-gray-500">1st Floor Room 1(Door on your right)</p>
                   </span>
                 </div>
               ) : null}

@@ -25,9 +25,9 @@ const teamMembers: TeamMember[] = [
   {
     id: "1",
     name: "Ngatia Wambugu",
-    role: "Principal Advocate",
+    role: "Senior Partner",
     description:
-      "Expert in corporate law and business litigation with over 15 years of experience.",
+      "Advocate of the High Court of Kenya, Notary Public, Commissioner for Oaths, Patent Agent",
     socialLinks: [
       { platform: "linkedin", url: "#" },
       { platform: "twitter", url: "#" },
@@ -92,7 +92,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
       <img
         src={member.image}
         alt={member.name}
-        className="w-full h-40 object-cover rounded-t-lg"
+        className="w-full h-72 object-cover rounded-t-lg"
       />
       <div className="p-6">
         <h3 className="text-lg font-semibold">{member.name}</h3>
@@ -125,7 +125,7 @@ const Teams: React.FC = () => {
           Meet Our Legal Team
         </h2>
         <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 xxl:grid-cols-3 gap-8"
           role="list"
           aria-label="Legal team members"
         >
