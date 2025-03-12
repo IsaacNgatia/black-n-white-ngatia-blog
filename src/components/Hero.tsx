@@ -49,14 +49,14 @@ const Hero = () => {
         </p>
       </div>
       <div className="bg-gray-50 rounded-3xl shadow-2xl md:w-full mx-auto pt-4">
-        <h3 className="text-4xl font-semibold text-center">
+        <h3 className="text-3xl md:text-4xl font-semibold text-center">
           Major Practice Areas
         </h3>
         <div className=" py-10 px-5 flex flex-col md:flex-row justify-evenly gap-5 h-auto">
           {mainPracticeAreas.map((practiceArea, index) => (
             <>
-              <span key={practiceArea.id} className="space-y-4 size-1/3 grow-0">
-                <h2 className="text-3xl font-bold">{practiceArea.title}</h2>
+              <span key={practiceArea.id} className="space-y-4 lg:size-1/3 lg:grow-0">
+                <h2 className="text-2xl md:text-3xl font-bold">{practiceArea.title}</h2>
                 <p className="text-justify">{practiceArea.description}</p>
               </span>
               {index !== mainPracticeAreas.length - 1 && (
