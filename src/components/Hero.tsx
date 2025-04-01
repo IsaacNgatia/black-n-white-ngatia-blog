@@ -2,7 +2,7 @@ const Hero = () => {
  const mainPracticeAreas = [
    {
      id: 1,
-     title: "Corporate and Commercial Transactions",
+     title: "Commercial and Corporate Transactions",
      description:
        "At Ngatia Wambugu & Company Advocates we boasts vast experience in providing advice to different institutions regarding complex commercial transactions. This ranges from ascertaining compliance with the relevant regulatory avenues to drafting registration paperwork for business formation as well as legal representation. Our team ensures smooth and legally sound processes for buying, selling, or leasing properties.",
    },
@@ -29,7 +29,7 @@ const Hero = () => {
         </span>
       </h1>
       <br />
-      <div className="space-y-3 text-start ">
+      <div className="space-y-3 text-justify">
         <p className="text-lg">
           At Ngatia Wambugu & Company Advocates we strive to provide dedicated
           and exceptional legal services to our clients. Our mission is to

@@ -14,7 +14,7 @@ const Contact = () => {
 
 
   const fetchBusinessStatus = async() => {
-    const businessStatusRes = await axios.get('http://localhost:3000/api/business-status');
+    const businessStatusRes = await axios.get('http://node.ngatia.co.ke/api/business-status');
     
     setBusinessStatus(businessStatusRes.data.message);
     if (businessStatusRes.data.status === "open") {
@@ -30,12 +30,15 @@ const Contact = () => {
   };
   async function submitContact() {
     setSubmittingForm(true);
-    const submitForm = await axios.post('http://localhost:3000/api/send-email',{
-      to: email,
-      name: name,
-      message: message,
-      phone: phone
-    })
+    const submitForm = await axios.post(
+      "http://node.ngatia.co.ke/api/send-email",
+      {
+        to: email,
+        name: name,
+        message: message,
+        phone: phone,
+      }
+    );
     if (submitForm.data.status === 'success') {
       alert('Your message has been sent successfully');
       setName('');

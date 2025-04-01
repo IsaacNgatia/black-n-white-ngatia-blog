@@ -3,59 +3,55 @@ import PracticeAreaModal from "./PracticeArea";
 const practiceAreasData = [
   {
     id: 1,
-    title: "Debt Recovery",
+    title: "Commercial and Corporate Transactions",
     description:
-      "Expert services to recover outstanding debts efficiently and professionally.",
-    richDescription:
-      "Our team provides comprehensive debt recovery solutions, helping businesses and individuals recover unpaid debts promptly and effectively. We employ proven strategies to ensure compliance with legal requirements while achieving the best outcomes for our clients.",
+      " Comprehensive legal support for corporate finance and capital markets.",
+    richDescription: [
+      "Kenya's rapidly growing economy is driven by a dynamic financial services industry. As regulations evolve, businesses in this sector require sophisticated legal support to navigate compliance challenges and seize emerging opportunities.",
+      "At Ngatia Wambugu & Company Advocates, we provide cutting-edge legal solutions in asset-based financing, structured debt and equity transactions, and corporate finance. Our expertise spans the full spectrum of financial players, including equity investors, lenders, banks, insurance firms, and joint ventures.",
+      "We stand out for our ability to handle complex transactions with a strategic, end-to-end approach. Our services cover tax advisory, project finance, insolvency, banking, insurance, mergers and acquisitions, real estate, and regulatory compliance. From negotiation and structuring to documentation and legal due diligence, we ensure seamless execution of financial and securities transactions—helping our clients achieve their business objectives with confidence.",
+    ],
   },
   {
     id: 2,
     title: "Conveyancing and Real Estate",
     description:
       "Comprehensive legal services for property transactions and disputes.",
-    richDescription:
-      "Our experts handle all aspects of property law, from conveyancing and real estate transactions to resolving landlord-tenant disputes. We guide clients through the complexities of property law, ensuring their interests are safeguarded at every step.",
+    richDescription: [
+      "At Ngatia Wambugu & Co. Advocates, we recognize the vital role that land and property play in society. We provide comprehensive legal services in real estate transactions, including drafting and registering charges, mortgages, debentures, and land transfers. Our expertise also covers subdivisions, amalgamations, changes of use, and the registration of cautions and caveats.",
+      "Beyond transactions, we offer strategic advice on project structuring, development, financing, regulatory compliance, and construction-related contracts. Whether representing individuals or real estate developers, we leverage our extensive experience to structure, negotiate, and document project and financing agreements—ensuring smooth execution and successful completion tailored to our clients' needs.",
+    ],
   },
   {
     id: 3,
-    title: "Alternative Dispute Resolution",
+    title: "Litigation and Alternative Dispute Resolution",
     description:
-      "Resolve disputes amicably through mediation and arbitration services.",
-    richDescription:
-      "We offer cost-effective alternative dispute resolution services, including mediation and arbitration. Our team helps parties navigate conflicts efficiently and reach mutually beneficial agreements, minimizing the need for prolonged litigation.",
+      "Strong representation in civil disputes to protect your rights.",
+    richDescription: [
+      "Ngatia Wambugu & Company Advocates provides comprehensive legal advice and representation across various practice areas. We handle cases in commercial litigation, judicial review, constitutional petitions, intellectual property disputes, procurement, employment and labor matters, insurance litigation, and succession cases.",
+      "Beyond litigation, we are committed to delivering practical, cost-effective dispute resolution strategies. Our advocates have extensive experience representing clients before arbitral tribunals and actively promote alternative dispute resolution methods such as arbitration, mediation, negotiation, and conciliation—helping clients achieve efficient and favorable outcomes.",
+    ],
   },
   {
     id: 4,
-    title: "Intellectual Property",
+    title: "Intellectual Property Trademarks, Patents and Copyrights",
     description:
       "Safeguard your ideas and creations with our intellectual property services.",
-    richDescription:
-      "We provide expert advice and representation in all areas of intellectual property, including trademarks, patents, copyrights, and trade secrets. Our services are tailored to protect your innovations and ensure your intellectual assets remain secure.",
+    richDescription: [
+      "In today's competitive market, brand visibility is essential to business success. A product's ability to stand out and attract consumers directly impacts its commercial viability. Protecting Intellectual Property (IP) through proper registration and commercialization—such as licensing, merchandising, and distributorship agreements—is vital for businesses seeking a competitive edge.",
+      "At Ngatia Wambugu & Company Advocates, we offer a full range of IP services, including the registration of trademarks, patents, utility models, industrial designs, and copyrights. We also handle renewals, assignments, and licensing of IP rights, as well as drafting license agreements and deeds of assignment.",
+      "Our team is skilled in prosecuting and litigating IP disputes, helping clients safeguard their rights against infringement, counterfeiting, misappropriation, and unfair competition. With deep market insight, we take a strategic, commercially driven approach that enhances efficiency, minimizes costs, and maximizes protection for our clients’ intellectual assets.",
+    ],
   },
   {
     id: 5,
-    title: "Employment and Labour",
+    title: "Employment and Labour Relation",
     description:
       "Protecting employers and employees with expert labor law guidance.",
-    richDescription:
-      "Our employment and labor law team advises on workplace policies, employment contracts, and dispute resolution. We assist businesses and individuals in navigating complex employment issues while ensuring compliance with labor regulations.",
-  },
-  {
-    id: 6,
-    title: "Banking and Finance Services",
-    description:
-      "Expert legal guidance in banking and finance-related matters.",
-    richDescription:
-      "We provide comprehensive legal support for banking and financial institutions, including regulatory compliance, loan agreements, and financial restructuring. Our goal is to help clients navigate the complexities of financial law effectively. We also offer top-notch legal advice to banks, financial institutions, and clients involved in securities transactions.We provide comprehensive support for property transactions, including drafting and reviewing agreements, handling disputes, and facilitating conveyancing services. ",
-  },
-  {
-    id: 7,
-    title: "Civil Litigation",
-    description:
-      "Strong representation in civil disputes to protect your rights.",
-    richDescription:
-      "Our civil litigation team represents clients in a wide range of disputes, including contract disagreements, property issues, and personal injury claims. We focus on achieving fair and just outcomes while safeguarding your legal interests.",
+    richDescription: [
+      "At Ngatia Wambugu & Company Advocates, we provide legal representation to both employers and employees in employment disputes. We also offer comprehensive advisory services to corporate entities on all aspects of employment and labor law, including employee contracts, executive compensation, benefit plans, consultancy agreements, and the drafting and review of HR policies.",
+      "Renowned for our cutting-edge counsel, we assist clients with severance agreements, stock options, equity, and other incentive compensation plans—key elements in corporate restructuring and investment deals. Additionally, we support businesses across various industries with labor law compliance, developing tailored compliance programs, conducting in-house training, and equipping staff with strategies to minimize legal risks.",
+    ],
   },
 ];
 

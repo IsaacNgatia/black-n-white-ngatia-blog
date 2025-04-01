@@ -49,6 +49,19 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: "3",
+
+    name: "Catherine Wanjehia",
+    role: "Consultant",
+    description:
+      "Specializes in real estate law, contract negotiations, and property disputes.",
+    socialLinks: [
+      { platform: "linkedin", url: "#" },
+      { platform: "twitter", url: "#" },
+    ],
+    image: "/images/man-sillohoute.png",
+  },
+  {
+    id: "4",
     name: "Jackson K",
     role: "Consultant",
     description:
@@ -60,7 +73,7 @@ const teamMembers: TeamMember[] = [
     image: "/images/man-sillohoute.png",
   },
   {
-    id: "4",
+    id: "5",
     name: "Patrick Karanja",
     role: "Consultant",
     description:

@@ -48,8 +48,22 @@ const Faq = () => {
             />
             <span>
               <h5>Give us a call</h5>
-              <a href="tel:+254726395910" className="font-bold">
-                (254) 726 395 910
+              <a
+                href="tel:+254726395910"
+                className="font-bold flex gap-1 hover:text-gray-600"
+              >
+                <p>(254) 726 395 910</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill="currentColor"
+                  className="bi bi-link-45deg"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                </svg>
               </a>
             </span>
           </span>
@@ -68,12 +82,23 @@ const Faq = () => {
             <span>
               <h5>Whatsapp Us</h5>
               <a
-                className="font-bold"
+                className="font-bold flex gap-1 hover:text-gray-700 hover:"
                 href="https://wa.me/+254726395910"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                +254726395910
+                <p>+254726395910</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill="currentColor"
+                  className="bi bi-link-45deg"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                </svg>
               </a>
             </span>
           </span>
@@ -89,67 +114,69 @@ const Faq = () => {
         <h1 className="text-lg font-bold md:hidden">
           Frequently Asked Questions
         </h1>
-        {faqs.map((faq) => (
-          <div
-            key={faq.id}
-            onClick={() => handleOnClick(faq.id)}
-            className="bg-[#f1f1f1] py-2 md:py-5 px-5 md:px-10 rounded-lg cursor-pointer space-y-5"
-          >
-            <span className="flex justify-between">
-              <h2 className="text-base md:text-lg lg:text-xl font-bold">
-                {faq.question}
-              </h2>
-              {activeIndex === faq.id && isOpen ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M5 12h14"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 4.5v15m7.5-7.5h-15"
-                  />
-                </svg>
-              )}
-            </span>
+        <div className="h-auto max-h-[26rem] overflow-y-auto space-y-4">
+          {faqs.map((faq) => (
             <div
-              className={`overflow-hidden transition-all duration-500 ease-in-out`}
-              style={{
-                maxHeight: isOpen ? "1000px" : "0",
-                opacity: isOpen ? 1 : 0,
-                marginTop: isOpen ? "1.25rem" : "0",
-              }}
-              // className={`overflow-hidden transition-all duration-1000 ${
-              //   activeIndex === faq.id && isOpen ? "max-h-96" : "max-h-0"
-              // }`}
+              key={faq.id}
+              onClick={() => handleOnClick(faq.id)}
+              className="bg-[#f1f1f1] py-2 md:py-5 px-5 md:px-10 rounded-lg cursor-pointer space-y-5"
             >
-              {activeIndex === faq.id && isOpen && (
-                <p className="text-sm md:text-base lg:text-lg text-start transition-all duration-1500">
-                  {faq.answer}
-                </p>
-              )}
+              <span className="flex justify-between">
+                <h2 className="text-base md:text-lg lg:text-xl font-bold">
+                  {faq.question}
+                </h2>
+                {activeIndex === faq.id && isOpen ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 12h14"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                )}
+              </span>
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out`}
+                style={{
+                  maxHeight: isOpen ? "1000px" : "0",
+                  opacity: isOpen ? 1 : 0,
+                  marginTop: isOpen ? "1.25rem" : "0",
+                }}
+                // className={`overflow-hidden transition-all duration-1000 ${
+                //   activeIndex === faq.id && isOpen ? "max-h-96" : "max-h-0"
+                // }`}
+              >
+                {activeIndex === faq.id && isOpen && (
+                  <p className="text-sm md:text-base lg:text-lg transition-all duration-1500 text-justify">
+                    {faq.answer}
+                  </p>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -159,30 +186,42 @@ export default Faq;
 const faqs: FAQ[] = [
   {
     id: 1,
-    question: "What are the legal services you provide?",
+    question: "How do I know if I need a lawyer?",
     answer:
-      "We provide a wide range of legal services including property law, conveyancing, landlord & tenant law, alternative dispute resolution, commercial law, corporate law, personal injuries & insurance law.",
+      "If you're facing a legal issues such as contract disputes, personal injury claims, family law matters, or criminal charges, consulting a lawyer can help you understand your rights and legal options. Our attorneys offer a free initial consultation to assess your case.",
   },
   {
     id: 2,
-    question: "How do I schedule a consultation?",
+    question: "How much do lawyers charge for legal services?",
     answer:
-      "You can schedule a consultation by filling out the contact form on our website or by calling our office during business hours.",
+      "Our fees depend on the type of case. Some cases are charged on an hourly basis, while others may have a flat fee.",
   },
   {
     id: 3,
-    question: "What are your fees?",
+    question: "What legal services do you offer for businesses and corporations?",
     answer:
-      "Our fees vary depending on the type of service you require. We offer a free initial consultation to discuss your needs and provide a quote.",
+      "We provide legal services for business formation, mergers & acquisitions, contract drafting, corporate governance, compliance, and intellectual property protection.",
   },
   {
     id: 4,
-    question: "How long have you been in business?",
+    question: "What legal steps are involved in buying property in Kenya?",
     answer:
-      "We have been in business for over 6 years, serving the legal needs of our community.",
+      "The process includes conducting title searches, drafting sales agreements, securing financing, paying stamp duty, and registering the transfer. Our firm ensures compliance with property laws and protects your interests.",
   },
   {
     id: 5,
+    question: "What is the statute of limitations for debt collection?",
+    answer:
+      "The time limit to file a claim in Kenya is 6 years from when the debt became due. After this period, the creditor may lose the right to sue for collection.",
+  },
+  {
+    id: 6,
+    question: "How long have you been in business?",
+    answer:
+      "We have been in business since 2022, serving the legal needs of our community.",
+  },
+  {
+    id: 7,
     question: "Do you offer pro bono services?",
     answer:
       "We are committed to serving our community and offer pro bono services on a case-by-case basis.",
