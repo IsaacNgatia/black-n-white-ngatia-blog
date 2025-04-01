@@ -60,10 +60,10 @@ const PracticeAreas = () => {
   return (
     <div
       id="practice-areas"
-      className="mx-2 md:max-w-2xl lg:max-w-6xl md:mx-auto bg-black rounded-lg text-white grid grid-cols-1 lg:grid-cols-3 p-6 md:p-10 justify-around gap-8"
+      className="mx-2 md:max-w-2xl lg:max-w-6xl md:mx-auto bg-black rounded-lg text-white grid grid-cols-1 lg:grid-cols-3 p-2 md:p-10 justify-around gap-8"
     >
       <div className="space-y-7 my-auto lg:max-w-1/4">
-        <h2 className="uppercase font-bold text-4xl md:text-4xl">
+        <h2 className="font-bold text-3xl md:text-4xl text-center md:text-start">
           Our Practice Areas
         </h2>
         <p className="text-justify text-base md:text-lg">
@@ -74,7 +74,7 @@ const PracticeAreas = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:col-span-2 gap-2 lg:gap-4">
         {practiceAreasData.map((area, index) => (
           <div key={index} className="space-y-7">
-            <div className="flex items-start justify-center gap-1 cursor-pointer bg-gray-50 text-black hover:bg-black hover:text-gray-50 hover:ring-gray-50 ring-2 hover:shadow-gray-300 hover:shadow-lg lg:p-2 rounded-md">
+            <div className="flex items-start justify-center gap-1 cursor-pointer bg-gray-50 text-black hover:bg-black hover:text-gray-50 hover:ring-gray-50 ring-2 hover:shadow-gray-300 hover:shadow-lg p-1 md:p-2 rounded-md">
               <img
                 src="/images/tick.png"
                 alt={`Area ${index + 1}`}

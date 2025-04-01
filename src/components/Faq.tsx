@@ -22,7 +22,7 @@ const Faq = () => {
       className="md:max-w-2xl lg:max-w-6xl w-full md:mx-auto p-2 lg:p-5 bg-gray-50 flex flex-col-reverse justify-center items-start space-y-10 md:flex-row md:justify-around md:items-start mt-4"
     >
       <div className="space-y-10 mx-2 md:mx-0">
-        <h1 className="text-lg md:text-xl lg:text-3xl font-bold hidden md:block">
+        <h1 className="text-lg md:text-2xl lg:text-4xl font-bold hidden md:block">
           Frequently Asked Questions
         </h1>
         <p className="text-base md:text-lg lg:text-xl">
@@ -111,7 +111,7 @@ const Faq = () => {
         </button>
       </div>
       <div className="space-y-2 w-full md:w-[50%]">
-        <h1 className="text-lg font-bold md:hidden">
+        <h1 className="text-3xl md:text-4xl text-center font-semibold md:hidden">
           Frequently Asked Questions
         </h1>
         <div className="h-auto max-h-[26rem] overflow-y-auto space-y-4">
@@ -132,7 +132,7 @@ const Faq = () => {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-5 h-5 md:w-6 md:h-6"
                   >
                     <path
                       strokeLinecap="round"
@@ -147,7 +147,7 @@ const Faq = () => {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-5 h-5 md:w-6 md:h-6"
                   >
                     <path
                       strokeLinecap="round"

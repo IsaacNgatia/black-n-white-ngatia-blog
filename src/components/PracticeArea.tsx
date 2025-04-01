@@ -26,15 +26,26 @@ const PracticeAreaModal = ({ practiceArea }: PracticeAreaModalProps) => {
 
   return (
     <>
-      <button
-        onClick={() =>
-          handleOpenModal(practiceArea.title, practiceArea.richDescription)
-        }
-        className=""
-      >
-        <span className="text-lg font-bold">{practiceArea.title}</span> -{" "}
-        {practiceArea.description}
-      </button>
+      <div className="flex flex-col w-full">
+        <button
+          onClick={() =>
+            handleOpenModal(practiceArea.title, practiceArea.richDescription)
+          }
+          className=""
+        >
+          <h4 className="text-lg font-bold text-start">{practiceArea.title}</h4>
+          <p className="text-start">{practiceArea.description}</p>
+        </button>
+        <button
+          onClick={() =>
+            handleOpenModal(practiceArea.title, practiceArea.richDescription)
+          }
+          className="bg-gray-50 transition-all duration-600 p-2 text-sm rounded-sm rounded-b-none text-black ml-auto border-t border-l shadow-md"
+        >
+          Learn More
+        </button>
+      </div>
+
       {isOpen && (
         <div
           className="fixed transition-all duration-500 ease-in top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center"
@@ -48,7 +59,10 @@ const PracticeAreaModal = ({ practiceArea }: PracticeAreaModalProps) => {
               {selectedTitle}
             </h2>
             {selectedRichDesc.map((desc, index) => (
-              <p key={index} className="text-base text-black text-justify cursor-default">
+              <p
+                key={index}
+                className="text-base text-black text-justify cursor-default"
+              >
                 {desc}
               </p>
             ))}

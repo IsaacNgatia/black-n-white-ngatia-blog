@@ -55,11 +55,15 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-gray-50 mx-2 md:mx-auto md:max-w-2xl lg:max-w-6xl w-full md:p-5 lg:p-10 space-y-10"
+      className="bg-gray-50 mx-2 md:mx-auto md:max-w-2xl lg:max-w-6xl w-full md:p-5 lg:p-10 space-y-5 md:space-y-10"
     >
-      <h5 className="text-2xl font-semibold text-center">Contact</h5>
+      <h5 className=" text-3xl md:text-4xl font-semibold text-center">
+        Contact
+      </h5>
       <div>
-        <h2 className="font-bold text-4xl text-center">Visit Us In Person</h2>
+        <h2 className="font-bold text-2xl md:text-3xl text-center">
+          Visit Us In Person
+        </h2>
         <p className="text-base md:text-lg lg:text-xl text-center">
           For personalized legal guidance and in-depth consultations, we invite
           you to visit our offices. Our team is ready to assist you with your
@@ -277,7 +281,7 @@ const Contact = () => {
                       disabled={submittingForm}
                       className="bg-black p-3 rounded-md text-[#f1f1f1] text-sm"
                     >
-                      {submittingForm ? 'Submitting ...' : 'Submit'}
+                      {submittingForm ? "Submitting ..." : "Submit"}
                     </button>
                   </div>
                 </div>
