@@ -14,7 +14,7 @@ const Contact = () => {
 
 
   const fetchBusinessStatus = async() => {
-    const businessStatusRes = await axios.get('http://node.ngatia.co.ke/api/business-status');
+    const businessStatusRes = await axios.get('https://node.ngatia.co.ke/api/business-status');
     
     setBusinessStatus(businessStatusRes.data.message);
     if (businessStatusRes.data.status === "open") {
@@ -338,7 +338,7 @@ const Contact = () => {
                     <h4 className="text-lg font-bold">Monday - Friday:</h4>
                     <p>8.00am - 5.000pm</p>
                   </span>
-                  <p className="">
+                  <p className="hidden">
                     <span className="">Now: </span>
                     <span
                       className={`${
