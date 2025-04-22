@@ -1,5 +1,4 @@
 import "./App.css";
-import Alert from "./components/Alert";
 import Contact from "./components/Contact";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
@@ -11,8 +10,7 @@ import "./fonts/Century Gothic.otf";
 
 function App() {
   return (
-    <div className="w-screen flex flex-col gap-5">
-      <Alert/>
+    <div className="w-full flex flex-col gap-5">
       <Nav />
       <Hero />
       {/* <About /> */}

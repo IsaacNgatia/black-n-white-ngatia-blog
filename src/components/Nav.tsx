@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { Menu, X, Phone, Search } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +19,7 @@ const Nav = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:justify-between py-2 mx-2 md:mx-4 lg:mx-0">
           {/* Contact Information */}
-          <div className="flex flex-col sm:flex-row sm:space-x-6 items-center">
+          <div className="flex flex-col sm:flex-row sm:space-x-6 md:space-x-0 lg:space-x-32 items-center">
             <a href="/" className="mb-2 sm:mb-0">
               <span className=" font-bold text-gray-900 text-xl relative select-none">
                 Ngatia Wambugu & Company
@@ -28,7 +28,8 @@ const Nav = () => {
                 </span>
               </span>
             </a>
-            <div className="flex space-x-4">
+
+            <div className="grid grid-cols-2 gap-x-16 gap-y-3 md:hidden">
               <span className="flex items-center space-x-1 text-gray-600">
                 <Phone className="w-4 h-4" />
                 <a
@@ -60,14 +61,38 @@ const Nav = () => {
           </div>
 
           {/* Search and Contact Button */}
-          <div className="flex items-center justify-center space-x-4 mt-2 sm:mt-0">
-            <button className="p-1 hover:bg-gray-100 rounded-full">
+          {/* <div className="flex items-center justify-end space-x-4 mt-2 sm:mt-0"> */}
+            {/* <button className="p-1 hover:bg-gray-100 rounded-full">
               <Search className="w-5 h-5 text-gray-600" />
-            </button>
-            <button className="bg-black text-white px-4 py-2 rounded-md text-sm hover:bg-gray-800 transition-colors">
+            </button> */}
+            {/* <a
+              href="/#contact"
+              className="bg-black text-white px-4 py-2 rounded-md text-sm hover:bg-gray-800 transition-colors"
+            >
               Contact Us
-            </button>
-          </div>
+            </a> */}
+          {/* </div> */}
+        </div>
+
+        <div className="md:flex justify-evenly hidden lg:hidden">
+          <span className="flex items-center space-x-1 text-gray-600">
+            <Phone className="w-4 h-4" />
+            <a href="tel:+254726395910" className="text-sm hover:text-gray-900">
+              +254 726 395 910
+            </a>
+          </span>
+          <span className="flex items-center space-x-1 text-gray-600">
+            <Phone className="w-4 h-4" />
+            <a href="tel:+254721674765" className="text-sm hover:text-gray-900">
+              +254 721 674 765
+            </a>
+          </span>
+          <span className="flex items-center space-x-1 text-gray-600">
+            <Phone className="w-4 h-4" />
+            <a href="tel:+254735021522" className="text-sm hover:text-gray-900">
+              +254 735 021 522
+            </a>
+          </span>
         </div>
 
         {/* Divider */}

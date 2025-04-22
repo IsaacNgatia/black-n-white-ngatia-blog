@@ -72,18 +72,6 @@ const teamMembers: TeamMember[] = [
     ],
     image: "/images/man-sillohoute.png",
   },
-  {
-    id: "5",
-    name: "Patrick Karanja",
-    role: "Consultant",
-    description:
-      "Provides critical support for legal research, drafting, and case management.",
-    socialLinks: [
-      { platform: "linkedin", url: "#" },
-      { platform: "twitter", url: "#" },
-    ],
-    image: "/images/man-sillohoute.png",
-  },
 ];
 
 // TeamMemberCard Component
@@ -132,7 +120,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
 // Main Teams Component
 const Teams: React.FC = () => {
   return (
-    <section className="team-section py-10">
+    <section id="about" className="team-section py-10">
       <div className="mx-2 md:mx-auto md:max-w-2xl lg:max-w-6xl w-full md:p-5 lg:p-10">
         <h2 className="text-3xl font-bold mb-6 text-center">
           Meet Our Legal Team
